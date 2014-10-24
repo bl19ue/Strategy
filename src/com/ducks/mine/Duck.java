@@ -10,8 +10,8 @@ public class Duck
 	
 	//So we add a fly() here
 	void fly();
-	//Now the problem is, all the ducks inherti this class, and all will be able to fly now
-	//which is a huge problem.
+	//So now one can think that we can override this method, and make this method to do nothing for the duck which doesnt fly
+	//as done in other classes
 	
 	//Other duck like methods
 }
