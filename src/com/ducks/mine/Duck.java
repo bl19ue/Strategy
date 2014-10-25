@@ -1,24 +1,7 @@
 package com.ducks.mine;
 
 /*
- * Now, as far we can see, other than fly and quack, the Duck class will stay the same.
- * So it wont change, just a bit maybe
- * Now to separate what changes from those that stays alone, we will create two different sets of classes
- * One for fly and one for quack
- * So we will create 2 classes, each set will contain all implementations of their respective behaviour
- * 
- *  Ex. one class that implements quacking, another-squeaking, and silence too.
- *  
- *  ****************************************************************************************************
- *  So that teaches us "Program to an interface, not an implementation!!!"
- * */
-
-/*
- * So the key is that, now the Duck will "delegate" its flying and quacking behaviour
- * 
- * So we should do that
- * 
- * 1. We'll add two instance variables for FlyBehaviour and QuackBehaviour
+ * What a shame, we have all the dynamic talent, but we are not using it 
  * */
 
 public class Duck 
@@ -26,8 +9,15 @@ public class Duck
 	FlyBehaviour flyBehaviour;
 	QuackBehaviour quackBehaviour;
 	
-	void swim();
-	void display();
+	void swim()
+	{
+		System.out.println("I swim");
+	}
+	
+	void display()
+	{
+		System.out.println("See me");
+	}
 	
 	void performQuack()// These methods replace the fly() and quack()
 	{
@@ -37,9 +27,16 @@ public class Duck
 	{
 		flyBehaviour.fly();
 	}
-	//Now all we care about that our class is able to quack and fly
+	void setFlyBehaviour(FlyBehaviour fb)
+	{
+		flyBehaviour = fb;
+	}
+	void setQuackBehaviour(QuackBehaviour qb)
+	{
+		quackBehaviour = qb;
+	}
 	
-	//Go to the MallardDuck Class
+	//Now we can create a new Fly behaviour, let's do it
 	
 	//Other duck like methods
 }

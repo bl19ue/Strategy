@@ -4,12 +4,12 @@ public class RedheadDuck extends Duck implements QuackBehaviour
 {
 	void display()
 	{
-		//looks like RedheadDuck
+		System.out.println("Looks like RedHead duck");
 	}
 
 	@Override
-	public void quack() {
-		// TODO Auto-generated method stub
-		
+	public void quack() 
+	{
+		System.out.println("Quacks like RedHead Duck");	
 	}
 }

@@ -6,7 +6,7 @@ public class FlyNotWay implements FlyBehaviour
 	@Override
 	public void fly() 
 	{
-		//implements - can't fly
+		System.out.println("I can't fly");
 	}
 
 }

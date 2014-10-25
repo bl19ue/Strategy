@@ -20,13 +20,13 @@ public class MallardDuck extends Duck implements FlyBehaviour
 	}
 	void display()
 	{
-		//looks like a mallar duck
+		System.out.println("Looks like mallard duck");
 	}
 	
 	@Override
 	public void fly()
 	{
-		//Do nothing
+		System.out.println("I fly like a mallard duck");
 	}
 	
 }
