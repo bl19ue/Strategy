@@ -1,6 +1,6 @@
 package com.ducks.mine;
 
-public class RedheadDuck extends Duck implements Quackable
+public class RedheadDuck extends Duck implements QuackBehaviour
 {
 	void display()
 	{
